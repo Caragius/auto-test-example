@@ -26,6 +26,9 @@ jobs:
       uses: gradle/gradle-build-action@v3
 
     - name: Build with Gradle Wrapper
+      run: gradle -h
+
+    - name: Build with Gradle Wrapper
       run: ./gradle test --tests src.test.java.ReqResTest
 
 
