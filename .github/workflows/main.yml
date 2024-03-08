@@ -26,10 +26,10 @@ jobs:
       uses: gradle/actions/setup-gradle@417ae3ccd767c252f5661f1ace9f835f9654f2b5 # v3.1.0
 
     - name: Build with Gradle Wrapper
-      run: ./gradle -h
+      run: gradle -h
 
     - name: Build with Gradle Wrapper
-      run: ./gradle test --tests src.test.java.ReqResTest
+      run: gradle test --tests src.test.java.ReqResTest
 
     - name: ls
       run: ls -lah
