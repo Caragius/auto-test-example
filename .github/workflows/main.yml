@@ -33,7 +33,7 @@ jobs:
       run: gradle -v
 
     - name: Build with Gradle Wrapper
-      run: gradle test --tests src.test.java.ReqResTest
+      run: gradle test 
 
     - name: ls
       run: ls -lah
