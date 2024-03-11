@@ -37,4 +37,6 @@ jobs:
 
     - name: ls
       run: ls -lah
+    - name: ls
+      run: ls -lah build
 
