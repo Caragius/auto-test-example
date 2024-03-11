@@ -38,5 +38,8 @@ jobs:
     - name: ls
       run: ls -lah
     - name: ls
-      run: ls -lah build
+      run: |
+        ls -lah build
+        ls -lah build/reports
+        ls -lah build/test-results
 
