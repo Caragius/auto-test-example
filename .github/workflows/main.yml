@@ -43,6 +43,6 @@ jobs:
         echo "=============Reports============="
         ls -lah build/reports/tests/test
         echo "=============test-results============="
-        cat -lah build/test-results/test/TEST-ReqResTest.xml
+        cat -lah build/test-results/test/*.xml
 
 
