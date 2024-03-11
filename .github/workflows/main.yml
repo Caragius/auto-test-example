@@ -41,10 +41,8 @@ jobs:
       run: |
         ls -lah build
         echo "=============Reports============="
-        ls -lah build/reports
-        ls -lah build/reports/tests
+        ls -lah build/reports/tests/test
         echo "=============test-results============="
-        ls -lah build/test-results
-        ls -lah build/test-results/test
+        cat -lah build/test-results/test/TEST-ReqResTest.xml
 
 
