@@ -40,6 +40,11 @@ jobs:
     - name: ls
       run: |
         ls -lah build
+        echo "=============Reports============="
         ls -lah build/reports
+        ls -lah build/reports/tests
+        echo "=============test-results============="
         ls -lah build/test-results
+        ls -lah build/test-results/test
+
 
