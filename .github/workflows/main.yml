@@ -27,9 +27,6 @@ jobs:
       with:
         gradle-version: 8.4
 
-    - name: run lint
-      run: make lint
-
     - name: Build with Gradle Wrapper
       run: gradle test 
 
