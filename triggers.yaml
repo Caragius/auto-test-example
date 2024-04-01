@@ -1,0 +1,11 @@
+on: push
+on: pull_request
+on:
+  pull_request:
+    branches: main
+on:
+  schedule:
+    - cron:  "0 0 * * *"
+on:
+  create
+on: workflow_dispatch

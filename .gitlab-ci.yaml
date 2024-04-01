@@ -1,0 +1,19 @@
+variables:
+    CR_REGISTRY: ghcr.io
+    CR_REPO: caragius/ci-golang-demo
+  
+stages:
+  - lint_and_test
+lint:
+  stage: lint_and_test
+  image: registry.gitlab.com/pipeline-components/go-lint:latest
+  before_script:
+    - apk add --update make
+  script:
+    - make lint
+
+test:
+  stage: lint_and_test
+  image: registry.gitlab.com/gitlab-org/gitlab-build-images:golangci-lint-alpine
+  script:
+    - gradlew test

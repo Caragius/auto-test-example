@@ -6,6 +6,13 @@ on:
   pull_request:
     branches: [ "master" ]
 
+
+env:
+  JOB: name
+
+{{ vars.JOB_NAME }}
+{{ secret .JOB_NAME }}
+
 jobs:
   build:
 
